@@ -1,1 +1,1 @@
-eval (ssh-agent -c)
+fish_ssh_agent
