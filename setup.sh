@@ -1,3 +1,3 @@
 #!/bin/sh
 mkdir -p ~/.config
-ln -sf ~/.config/fish ~/dev/dotfiles/fish 
+ln -sf ~/dev/dotfiles/fish ~/.config/fish
