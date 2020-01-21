@@ -1,8 +1,10 @@
 [alias]
     st = status
 	ps = push
+	psfwl = push --force-with-lease
 	pl = pull
-	ch = checkout
+	sw = switch
+	rs = restore
 	br = branch
 	cm = commit
 	wdf = diff --word-diff
