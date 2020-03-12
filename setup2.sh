@@ -27,7 +27,7 @@ unzip -d ~/ /tmp/master.zip
 mv ~/dotfiles-master ~/.dotfiles
 
 # sdkman 
-curl -s "https://get.sdkman.io" | bash
+curl -s "https://get.sdkman.io" | bash # @fixme: このままだと .bashrc に設定してしまう
 sdk list java
 sdk install java 8.0.242-open  
 sdk install sbt
