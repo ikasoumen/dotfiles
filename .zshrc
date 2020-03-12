@@ -87,8 +87,6 @@ setopt ignore_eof
 # '#' 以降をコメントとして扱う
 setopt interactive_comments
 
-# ディレクトリ名だけでcdする
-setopt auto_cd
 
 # cd したら自動的にpushdする
 setopt auto_pushd
@@ -166,6 +164,13 @@ esac
 
 # vim:set ft=zsh:
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# sdkman
 export SDKMAN_DIR="/home/ikasoumen/.sdkman"
 [[ -s "/home/ikasoumen/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ikasoumen/.sdkman/bin/sdkman-init.sh"
+
+# linuxbrew
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+# nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"

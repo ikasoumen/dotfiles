@@ -20,11 +20,20 @@ sudo apt -y install zsh
 
 sudo apt -y install mysql-client mysql-server
 
+# LinuxBrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 # dotfiles 
 rm /tmp/master.zip
 wget -O /tmp/master.zip https://github.com/ikasoumen/dotfiles/archive/master.zip
 unzip -d ~/ /tmp/master.zip
 mv ~/dotfiles-master ~/.dotfiles
+
+# .zshrc
+ln -sf ~/.dotfiles/.zshrc ~/
+
+# .gitconfig
+ln -sf ~/.dotfiles/.gitconfig ~/
 
 # sdkman 
 curl -s "https://get.sdkman.io" | bash # @fixme: このままだと .bashrc に設定してしまう
@@ -32,11 +41,8 @@ sdk list java
 sdk install java 8.0.242-open  
 sdk install sbt
 
-# .zshrc
-ln -sf ~/.dotfiles/.zshrc ~/
-
-# .gitconfig
-ln -sf ~/.dotfiles/.gitconfig ~/
+# nodenv
+brew install nodenv
 
 # mysql setup
 #
