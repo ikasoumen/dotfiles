@@ -50,5 +50,6 @@ ln -sf ~/.dotfiles/.gitconfig ~/
 # ```
 
 # mysql: no root password
+# @see: https://qiita.com/mwatanabe@github/items/7e9a40d31bc27ab9d901
 sudo service mysql start
 sudo mysql -uroot -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';"
