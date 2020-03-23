@@ -164,10 +164,6 @@ esac
 
 # vim:set ft=zsh:
 
-# sdkman
-export SDKMAN_DIR="/home/ikasoumen/.sdkman"
-[[ -s "/home/ikasoumen/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ikasoumen/.sdkman/bin/sdkman-init.sh"
-
 # linuxbrew
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
