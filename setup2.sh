@@ -16,7 +16,7 @@ sudo apt update
 
 sudo apt -y install build-essential unzip zip
 
-sudo apt -y install zsh 
+sudo apt -y install zsh fish
 
 sudo apt -y install mysql-client mysql-server
 
@@ -35,11 +35,8 @@ ln -sf ~/.dotfiles/.zshrc ~/
 # .gitconfig
 ln -sf ~/.dotfiles/.gitconfig ~/
 
-# sdkman 
-curl -s "https://get.sdkman.io" | bash # @fixme: このままだと .bashrc に設定してしまう
-sdk list java
-sdk install java 8.0.242-open  
-sdk install sbt
+# fish
+ln -sf ~/.dotfiles/fish ~/.config/
 
 # nodenv
 brew install nodenv
