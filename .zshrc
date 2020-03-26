@@ -170,3 +170,7 @@ eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 # nodenv
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
+
+# ssh-add 
+eval "$(ssh-agent)"
+ssh-add ~/.ssh/id_rsa
