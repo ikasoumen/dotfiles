@@ -1,7 +1,7 @@
 fish_ssh_agent
 
 # Linuxbrew
-eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # nodenv 
 eval (nodenv init -)

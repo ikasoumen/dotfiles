@@ -24,10 +24,10 @@ sudo apt -y install mysql-client mysql-server
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # dotfiles 
-rm /tmp/master.zip
 wget -O /tmp/master.zip https://github.com/ikasoumen/dotfiles/archive/master.zip
 unzip -d ~/ /tmp/master.zip
 mv ~/dotfiles-master ~/.dotfiles
+rm /tmp/master.zip
 
 # .zshrc
 ln -sf ~/.dotfiles/.zshrc ~/
@@ -36,6 +36,7 @@ ln -sf ~/.dotfiles/.zshrc ~/
 ln -sf ~/.dotfiles/.gitconfig ~/
 
 # fish
+mkdir ~/.config
 ln -sf ~/.dotfiles/fish ~/.config/
 
 # nodenv
