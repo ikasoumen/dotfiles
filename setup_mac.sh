@@ -14,6 +14,8 @@ touch ~/.ssh/config
 # LinuxBrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+brew install fish wget
+
 # dotfiles 
 wget -O /tmp/master.zip https://github.com/ikasoumen/dotfiles/archive/master.zip
 unzip -d ~/ /tmp/master.zip
