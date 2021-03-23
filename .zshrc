@@ -167,6 +167,9 @@ esac
 # linuxbrew
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
+# Homebrew
+export PATH="/opt/homebrew/bin:$PATH"
+
 # nodenv
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
