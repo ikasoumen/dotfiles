@@ -176,4 +176,4 @@ eval "$(nodenv init -)"
 
 # ssh-add 
 eval "$(ssh-agent)"
-ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsaeval "$(/opt/homebrew/bin/brew shellenv)"
